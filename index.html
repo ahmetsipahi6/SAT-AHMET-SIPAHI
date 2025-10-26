@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Lezzetli Tarifler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🍽️ Lezzetli Tarifler</h1>
+  <p>En güzel yemekleri burada keşfedin!</p>
+</header>
+
+<!-- 🔍 Arama ve Kategori Seçimi -->
+<section class="filters">
+  <input type="text" id="arama" placeholder="Yemek veya tarif ara... 🔍">
+  <select id="kategori">
+    <option value="hepsi">Tüm Kategoriler</option>
+    <option value="ana">Ana Yemekler</option>
+    <option value="ara">Ara Öğünler</option>
+    <option value="corba">Çorbalar</option>
+    <option value="tatli">Tatlılar</option>
+  </select>
+</section>
+
+<!-- 🍲 Ana İçerik (Eski tarifler duruyor) -->
+<div class="container">
+
+  <div class="tarif" data-kategori="ara">
+      <img src="resimler/karnabahar-kızartması.jpg" alt="Karnabahar Kızartması">
+      <div class="tarif-icerik">
+          <h2>Karnabahar Kızartması</h2>
+          <p><strong>Malzemeler:</strong> Karnabahar, yumurta, un, tuz, karabiber, kızartmak için yağ.</p>
+          <p><strong>Yapılışı:</strong> Karnabaharı haşlayın. Yumurtaya ve una bulayıp kızartın. Sarımsaklı yoğurtla servis yapabilirsiniz.</p>
+      </div>
+  </div>
+
+  <div class="tarif" data-kategori="corba">
+      <img src="resimler/domates-çorbası.jpg" alt="Domates Çorbası">
+      <div class="tarif-icerik">
+          <h2>Domates Çorbası</h2>
+          <p><strong>Malzemeler:</strong> Domates, un, süt, tereyağı, tuz, karabiber.</p>
+          <p><strong>Yapılışı:</strong> Domatesleri rendeleyin. Tereyağında unu kavurun, süt ve domatesi ekleyin. Karıştırarak pişirin. Üzerine kaşar peyniri serpebilirsiniz.</p>
+      </div>
+  </div>
+
+  <div class="tarif" data-kategori="ana">
+      <img src="resimler/mantarlı-tavuk-sote.jpg" alt="Tavuk Sote">
+      <div class="tarif-icerik">
+          <h2>Tavuk Sote</h2>
+          <p><strong>Malzemeler:</strong> Tavuk göğsü, biber, domates, soğan, sıvı yağ, baharatlar.</p>
+          <p><strong>Yapılışı:</strong> Tavukları doğrayıp kavurun. Sebzeleri ekleyin ve birlikte soteleyin. Sıcak servis yapın.</p>
+      </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 Lezzetli Tarifler | Tüm hakları saklıdır.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

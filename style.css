@@ -1,0 +1,160 @@
+/* === GENEL TASARIM === */
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(180deg, #fff8f0 0%, #fff1e0 100%);
+  color: #333;
+}
+
+/* === ÜST KISIM === */
+header {
+  background: linear-gradient(90deg, #ff7043, #ff9800);
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.3em;
+  letter-spacing: 0.5px;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 1.1em;
+  opacity: 0.95;
+}
+
+/* === ARAMA VE KATEGORİ KISMI === */
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 30px auto;
+  padding: 15px 20px;
+  background: white;
+  border-radius: 16px;
+  max-width: 700px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+#arama {
+  flex: 1;
+  min-width: 250px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 2px solid #ffd4b2;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s;
+  background: #fffaf5;
+}
+
+#arama:focus {
+  border-color: #ff7043;
+  box-shadow: 0 0 6px rgba(255, 112, 67, 0.5);
+  background: white;
+}
+
+#kategori {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 2px solid #ffd4b2;
+  background: linear-gradient(135deg, #fff3e0, #fffaf5);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#kategori:hover {
+  border-color: #ff7043;
+  background: linear-gradient(135deg, #fff1dc, #ffffff);
+  transform: scale(1.03);
+}
+
+/* === TARİFLER === */
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.tarif {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarif:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.tarif img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.tarif:hover img {
+  transform: scale(1.05);
+}
+
+.tarif-icerik {
+  padding: 18px 20px 25px 20px;
+}
+
+.tarif-icerik h2 {
+  color: #d84315;
+  margin-top: 0;
+  font-size: 1.4em;
+  border-bottom: 2px solid #ffe0b2;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.tarif-icerik p {
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* === ALT KISIM === */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffe0b2;
+  color: #5d4037;
+  font-size: 15px;
+  margin-top: 40px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* === ANİMASYONLAR === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === MOBİL === */
+@media (max-width: 768px) {
+  header h1 { font-size: 1.8em; }
+  #arama { width: 100%; }
+  .filters {
+    flex-direction: column;
+    gap: 10px;
+    max-width: 90%;
+  }
+}
