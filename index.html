@@ -9,7 +9,7 @@
 
 <header>
   <h1>🍽️ Lezzetli Tarifler</h1>
-  <p>En güzel yemekleri burada keşfedin!</p>
+  <p>En güzel yemekleri keşfet, ara ve kategorilere göre seç!</p>
 </header>
 
 <!-- 🔍 Arama ve Kategori Seçimi -->
@@ -24,34 +24,83 @@
   </select>
 </section>
 
-<!-- 🍲 Ana İçerik (Eski tarifler duruyor) -->
+<!-- 🍲 Tarifler -->
 <div class="container">
 
-  <div class="tarif" data-kategori="ara">
-      <img src="resimler/karnabahar-kızartması.jpg" alt="Karnabahar Kızartması">
-      <div class="tarif-icerik">
-          <h2>Karnabahar Kızartması</h2>
-          <p><strong>Malzemeler:</strong> Karnabahar, yumurta, un, tuz, karabiber, kızartmak için yağ.</p>
-          <p><strong>Yapılışı:</strong> Karnabaharı haşlayın. Yumurtaya ve una bulayıp kızartın. Sarımsaklı yoğurtla servis yapabilirsiniz.</p>
-      </div>
-  </div>
-
-  <div class="tarif" data-kategori="corba">
-      <img src="resimler/domates-çorbası.jpg" alt="Domates Çorbası">
-      <div class="tarif-icerik">
-          <h2>Domates Çorbası</h2>
-          <p><strong>Malzemeler:</strong> Domates, un, süt, tereyağı, tuz, karabiber.</p>
-          <p><strong>Yapılışı:</strong> Domatesleri rendeleyin. Tereyağında unu kavurun, süt ve domatesi ekleyin. Karıştırarak pişirin. Üzerine kaşar peyniri serpebilirsiniz.</p>
-      </div>
+  <!-- ANA YEMEKLER -->
+  <div class="tarif" data-kategori="ana">
+    <img src="resimler/mantarli-tavuk-sote.jpg" alt="Mantarlı Tavuk Sote">
+    <div class="tarif-icerik">
+      <h2>Mantarlı Tavuk Sote</h2>
+      <p><strong>Malzemeler:</strong> Tavuk göğsü, mantar, biber, domates, soğan, baharatlar.</p>
+      <p><strong>Yapılışı:</strong> Tavukları doğrayıp kavurun, sebzeleri ekleyin ve pişirin. Sıcak servis yapın.</p>
+    </div>
   </div>
 
   <div class="tarif" data-kategori="ana">
-      <img src="resimler/mantarlı-tavuk-sote.jpg" alt="Tavuk Sote">
-      <div class="tarif-icerik">
-          <h2>Tavuk Sote</h2>
-          <p><strong>Malzemeler:</strong> Tavuk göğsü, biber, domates, soğan, sıvı yağ, baharatlar.</p>
-          <p><strong>Yapılışı:</strong> Tavukları doğrayıp kavurun. Sebzeleri ekleyin ve birlikte soteleyin. Sıcak servis yapın.</p>
-      </div>
+    <img src="resimler/ızgara kofte.jpg" alt="Köfte">
+    <div class="tarif-icerik">
+      <h2>Izgara Köfte</h2>
+      <p><strong>Malzemeler:</strong> Kıyma, ekmek kırıntısı, soğan, baharatlar.</p>
+      <p><strong>Yapılışı:</strong> Malzemeleri yoğurun, şekil verip ızgarada pişirin. Yanında pilavla servis edin.</p>
+    </div>
+  </div>
+
+  <!-- ARA ÖĞÜNLER -->
+  <div class="tarif" data-kategori="ara">
+    <img src="resimler/karnabahar-kizartmasi.jpg" alt="Karnabahar Kızartması">
+    <div class="tarif-icerik">
+      <h2>Karnabahar Kızartması</h2>
+      <p><strong>Malzemeler:</strong> Karnabahar, yumurta, un, tuz, karabiber, yağ.</p>
+      <p><strong>Yapılışı:</strong> Haşlayıp una ve yumurtaya bulayın, kızartın. Yoğurtla servis edin.</p>
+    </div>
+  </div>
+
+  <div class="tarif" data-kategori="ara">
+    <img src="resimler/patates kizartmasi.jpg" alt="Patates Kızartması">
+    <div class="tarif-icerik">
+      <h2>Patates Kızartması</h2>
+      <p><strong>Malzemeler:</strong> Patates, tuz, kızartma yağı.</p>
+      <p><strong>Yapılışı:</strong> Patatesleri doğrayıp yağda kızartın. Kağıt havluya alın, tuzlayın.</p>
+    </div>
+  </div>
+
+  <!-- ÇORBALAR -->
+  <div class="tarif" data-kategori="corba">
+    <img src="resimler/domates-çorbası.jpg" alt="Domates Çorbası">
+    <div class="tarif-icerik">
+      <h2>Domates Çorbası</h2>
+      <p><strong>Malzemeler:</strong> Domates, un, süt, tereyağı, tuz, karabiber.</p>
+      <p><strong>Yapılışı:</strong> Domatesleri rendeleyin, tereyağında unu kavurun, sütle karıştırıp pişirin.</p>
+    </div>
+  </div>
+
+  <div class="tarif" data-kategori="corba">
+    <img src="resimler/mercimek çorbasi.jpg" alt="Mercimek Çorbası">
+    <div class="tarif-icerik">
+      <h2>Mercimek Çorbası</h2>
+      <p><strong>Malzemeler:</strong> Kırmızı mercimek, soğan, havuç, un, tuz, karabiber.</p>
+      <p><strong>Yapılışı:</strong> Sebzeleri kavurun, mercimeği ekleyip pişirin, blenderdan geçirin.</p>
+    </div>
+  </div>
+
+  <!-- TATLILAR -->
+  <div class="tarif" data-kategori="tatli">
+    <img src="resimler/sütlaç.jpg" alt="Sütlaç">
+    <div class="tarif-icerik">
+      <h2>Sütlaç</h2>
+      <p><strong>Malzemeler:</strong> Süt, pirinç, şeker, vanilin.</p>
+      <p><strong>Yapılışı:</strong> Pirinçleri haşlayın, süt ve şekeri ekleyip kısık ateşte pişirin.</p>
+    </div>
+  </div>
+
+  <div class="tarif" data-kategori="tatli">
+    <img src="resimler/kazandibi.jpg" alt="Kazandibi">
+    <div class="tarif-icerik">
+      <h2>Kazandibi</h2>
+      <p><strong>Malzemeler:</strong> Süt, şeker, nişasta, un, tereyağı.</p>
+      <p><strong>Yapılışı:</strong> Malzemeleri pişirip karamelize edin, dinlendirip dilimleyin.</p>
+    </div>
   </div>
 
 </div>
